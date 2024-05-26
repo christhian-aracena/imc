@@ -67,6 +67,11 @@ public class interfaz extends javax.swing.JFrame {
         });
 
         btnLimpiar.setText("Limpiar");
+        btnLimpiar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnLimpiarActionPerformed(evt);
+            }
+        });
 
         jLabel3.setText("IMC");
 
@@ -169,6 +174,11 @@ public class interfaz extends javax.swing.JFrame {
     private void inputPesoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_inputPesoActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_inputPesoActionPerformed
+
+    private void btnLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimpiarActionPerformed
+        inputPeso.setText("");
+        inputEstatura.setText("");
+    }//GEN-LAST:event_btnLimpiarActionPerformed
 
     public static void main(String args[]) {
 
